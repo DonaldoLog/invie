@@ -16,11 +16,27 @@
         }
         img {
             max-width: 100%;    
+            /* display: none; */
         }
+
+        img#responsive {
+            display: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            img.responsive2 {
+                display: none;
+            }
+            img#responsive {
+                display: block;
+            }
+        }
+
     </style>
-    <img src="header.jpg" alt="">
-    <img src="hero.jpg" alt="">
-    <img src="acustica.jpg" alt="">
-    <img src="clasica.webp" alt="">
+    <img src="invie-responsive.webp" id="responsive">
+    <img src="header.jpg" alt="" class="responsive2">
+    <img src="hero.jpg" alt="" class="responsive2">
+    <img src="acustica.jpg" alt="" class="responsive2">
+    
 </body>
 </html>
